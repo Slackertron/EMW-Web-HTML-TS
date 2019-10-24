@@ -1,16 +1,100 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Coding Template</title>
-  <link rel="stylesheet" type="text/css" href="bundle.css">
-</head>
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <title>Bilhuset</title>
+        <!--Meta Tags-->
+        <meta http-equiv="" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">            
+        <!--Bootstrap-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="navbar navbar-expand-lg">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link">Biler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Leasing</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link">Kontakt os</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Login</a>
+                </li>
+            </ul>               
+        </div>     
+        <br>        
+        <div class="jumbotron" style="background-color:rgb(95, 99, 114)">
+            <h1>Bilhuset</h1>
+            <h6>Biler lidt udover det sædvanlige</h6>            
+        </div>
+        <div class="">
+            <h2>Beregn bilafgift </h2>
+            <div class="">
+                <input id="prisInput" type="number" placeholder="Indtast pris"/>
+                <select id="bilTypeInput">
+                  <option value="Personbil">Bil</option>
+                  <option value="Elbil">Elbil</option>
+                </select>                
+                <button id="beregnButton">Beregn</button>
+            </div>
+            <div>
+                <p>Afgift:
+                    <output id="afgiftOutput" type="number"></output>
+                </p>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <div class="row">              
+                <div class="col-md-3" style="background-color:rgb(162, 198, 207)">Lamborghini Huracan Performante
+                    <br>
+                    <img class="img" src="http://www.pngmart.com/files/10/Lamborghini-Huracan-PNG-Photo.png" height="180px" />
+                    <br>
+                    <p>Pris: 1.605.000 kr</p>
+                    <p>Afgift: 2.277.500 kr</p>
+                    <p>Samlet pris: 3.882.500 kr</p>
+                </div>  
+                <div class="col-md-3" style="background-color:rgb(162, 198, 207)">Lamborghini Huracan
+                    <br>
+                    <img class="img" src="http://www.pngmart.com/files/10/Lamborghini-Huracan-PNG-Transparent-Picture.png" height="180px"/>
+                    <br>                    
+                    <p>Pris: 1.200.000 kr</p>
+                    <p>Afgift: 1.670.000 kr</p>
+                    <p>Samlet pris: 2.870.000 kr</p>
+                </div> 
+                <div class="col-md-3" style="background-color:rgb(162, 198, 207)">Lotus Elise
+                    <br>
+                    <img class="img" src="http://www.pngmart.com/files/10/Lotus-Car-PNG-Transparent-HD-Photo.png" height="180px"/>
+                    <br>
+                    <p>Pris: 356.370 kr</p>
+                    <p>Afgift: 404.555 kr</p>
+                    <p>Samlet pris: 760.925 kr</p>
+                </div> 
+                <div class="col-md-3" style="background-color:rgb(162, 198, 207)">Tesla Model S
+                    <br>
+                    <img class="img" src="http://www.pngmart.com/files/4/Tesla-PNG-Photo.png" height="180px"/>
+                    <br>
+                    <p>Pris: 679.000 kr</p>
+                    <p>Afgift: 177.700 kr</p>
+                    <p>Samlet pris: 856.700 kr</p>
+                </div>       
+            </div>
+        </div>
+        
 
-<body>
-  <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
-  <div id="content"></div>
-    
-  <script src="bundle.js"></script>
-</body>
+        <br>
+        <br>
+        <footer>
+            <span class="">
+                <p></p> 
+            </span>
+            
+        </footer>
+        <script src="bundle.js"></script>
+    </body>           
 </html>
