@@ -2,8 +2,8 @@
 let buttonElement: HTMLButtonElement = <HTMLButtonElement>document.getElementById("beregnButton");
 
 //Function til udregning af bilafgift på normal personbil.
-function BilAfgift(pris : number){  
-
+function BilAfgift(pris : number)
+{  
     let outputElement: HTMLOutputElement = <HTMLOutputElement>document.getElementById("afgiftOutput");    
 
     if (pris <= 0)
@@ -24,15 +24,14 @@ function BilAfgift(pris : number){
     return bilAfgift;
 }
 //Function til udregning af bilafgift på elbil.
-function ElBilAfgift(pris : number){
-    
+function ElBilAfgift(pris : number)
+{    
     let outputElement: HTMLOutputElement = <HTMLOutputElement>document.getElementById("afgiftOutput");    
 
     if (pris <= 0)
     {
         outputElement.innerHTML = "Prisen skal være mere end 0";
     }
-
     
     let bilAfgift : number;
 
@@ -44,11 +43,9 @@ function ElBilAfgift(pris : number){
     {
         bilAfgift = (pris * 1.50) - 130000
     }
-
     
     let elBilAfgift : number = bilAfgift * 0.20;
     return elBilAfgift
-
 }
 
 //Opretter event listener på button, så man kan køre function ved click på button.
